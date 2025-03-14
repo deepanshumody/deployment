@@ -1,6 +1,17 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+def main():
+    st.set_page_config(page_title="App Moved", page_icon="🚀")
+    
+    st.title("🚨 App Moved 🚨")
+    st.write("This application has been moved to a new location.")
+    
+    new_url = "https://new-app-link.com"  # Replace with the actual new link
+    st.markdown(f"### [Click here to access the new app]({new_url})")
+    
+    st.info("Please update your bookmarks.")
+    
+    st.balloons()
+    
+if __name__ == "__main__":
+    main()
